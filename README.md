@@ -10,7 +10,7 @@ It can be configured to be controlled by a pot, or analog voltage. A pulse width
 a standard RC receiver, or you can talk to it over SPI. You can also connect a MCP4131 for automatic
 volume control.
 
-You can find a demo video here: http://youtu.be/sEZLDVRouNE
+You can find a demo video here: http://youtu.be/Uw-a45LOt3c
 
 
 Should work on anything at 16MHz with an ATMega328, and will probably work fine on an ATMega168.
