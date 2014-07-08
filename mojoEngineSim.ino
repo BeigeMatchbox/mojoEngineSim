@@ -52,9 +52,9 @@ volatile int pulseWidth = 0;
 // Mode settings - These could easily be 4 jumpers connected to spare pins, checked at startup to determin mode
 
 boolean managedThrottle = true;     // Managed mode looks after the digipot if fitted for volume, and adds some mass to the engine
-boolean potThrottle = false;         // A pot connected to A1, 0-1023 sets speed
+boolean potThrottle = true;         // A pot connected to A1, 0-1023 sets speed
 boolean pwmThrottle = false;        // Takes a standard servo signal on pin 2 (UNO)
-boolean spiThrottle = true;        // SPI mode, is an SPI slave, expects 1-255 for throttle position, with 0 being engine off
+boolean spiThrottle = false;        // SPI mode, is an SPI slave, expects 1-255 for throttle position, with 0 being engine off
 
 
 
