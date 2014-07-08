@@ -3,7 +3,9 @@
 #include <avr/io.h>
 #include <avr/pgmspace.h>
 
-
+// The loop starts off as a sound in Audacity, sample rate set to 16KHz
+// It is then exported as 8bit unsigned raw
+// Then converted to an array with xxd -i
 
 const int idle_len = 7852;
 

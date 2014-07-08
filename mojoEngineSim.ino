@@ -1,6 +1,9 @@
 /*
-      This code was quick and dirty, based on a PCM audio example in the arduino playground, it's been heavely modified
-      for use with RC to generate something that's a bit like an engine sound. With some rejigging this program could
+      This code was quick and dirty, based on a PCM audio example in the
+      arduino playground: http://playground.arduino.cc/Code/PCMAudio
+      
+      It's been heavely modified for use with RC to generate something that's
+      a bit like an engine sound. With some rejigging this program could
       be far nicer to read, but in it's current state it is functional...
 */
 
