@@ -26,11 +26,11 @@ Should work on anything at 16MHz with an ATMega328, and will probably work fine 
 
 In the .ino you can change these values to set which mode you want to use:
 
-'''
+```
 boolean managedThrottle = true; // Managed mode looks after the digipot if fitted for volume, and adds some mass to the engine
 boolean potThrottle = false;    // A pot connected to A1, 0-1023 sets speed
 boolean pwmThrottle = false;    // Takes a standard servo signal on pin 2 (UNO)
 boolean spiThrottle = true;     // SPI mode, is an SPI slave, expects 1-255 for throttle position, with 0 being engine off
-'''
+```
 
 managedThrottle can be true or false in any mode, of the last 3 only 1 of them must be true or strange things will happen...
