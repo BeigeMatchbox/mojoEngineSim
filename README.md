@@ -13,13 +13,13 @@ volume control.
 Should work on anything at 16MHz with an ATMega328, and will probably work fine on an ATMega168.
 
 * Pin A1 - Pot wiper
-* 
+ 
 * Pin  2 - Pulsewidth IN
 * Pin  3 - Sound OUT
 * Pin  4 - MCP4031 CS
 * Pin  5 - MCP4031 SCK
 * Pin  6 - MCP4031 DATA
-* 
+ 
 * Pin 10 - SPI CS
 * Pin 11 - SPI MISO
 * Pin 12 - SPI MOSI
