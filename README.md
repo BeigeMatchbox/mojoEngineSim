@@ -1,12 +1,13 @@
 mojoEngineSim README.md
 
+![alt tag](http://www.74hc.co.uk/wp-content/uploads/2014/07/tallBanner_01.jpg)
 
 This is an Arduino project that uses a looping sample to roughly generate engine sound effects. It's
 based on the example at http://playground.arduino.cc/Code/PCMAudio you can still see the remnants
 in the timer setup functions.
 
 It can be configured to be controlled by a pot, or analog voltage. A pulse width as you would get from
-a standard RC receiver, or you can talk to it over SPI. You can also connect a MCP4031 for automatic
+a standard RC receiver, or you can talk to it over SPI. You can also connect a MCP4131 for automatic
 volume control.
 
 You can find a demo video here: http://youtu.be/sEZLDVRouNE
@@ -17,9 +18,9 @@ Should work on anything at 16MHz with an ATMega328, and will probably work fine 
 * Pin A1 - Pot wiper
 * Pin  2 - Pulsewidth IN
 * Pin  3 - Sound OUT
-* Pin  4 - MCP4031 CS
-* Pin  5 - MCP4031 SCK
-* Pin  6 - MCP4031 DATA
+* Pin  4 - MCP4131 CS
+* Pin  5 - MCP4131 SCK
+* Pin  6 - MCP4131 DATA
 * Pin 10 - SPI CS
 * Pin 11 - SPI MISO
 * Pin 12 - SPI MOSI
