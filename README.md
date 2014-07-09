@@ -37,3 +37,5 @@ boolean spiThrottle = true;     // SPI mode, is an SPI slave, expects 1-255 for 
 ```
 
 managedThrottle can be true or false in any mode, of the last 3 only 1 of them must be true or strange things will happen...
+
+settings.h contains some bits and bobs you can fiddle with, more to add later.

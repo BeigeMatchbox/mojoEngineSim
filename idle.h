@@ -1,6 +1,4 @@
-#include <stdint.h>
-#include <avr/interrupt.h>
-#include <avr/io.h>
+
 #include <avr/pgmspace.h>
 
 // The loop starts off as a sound in Audacity, sample rate set to 16KHz
