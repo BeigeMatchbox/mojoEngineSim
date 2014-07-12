@@ -8,14 +8,15 @@
       readable, still some to do though.
 */
 
+
 #include "settings.h"
 #include "idle.h"
 
 // Mode settings - These could easily be 4 jumpers connected to spare pins, checked at startup to determine mode
 boolean managedThrottle = true;     // Managed mode looks after the digipot if fitted for volume, and adds some mass to the engine
-boolean potThrottle = true;        // A pot connected to A1, 0-1023 sets speed
+boolean potThrottle = true;         // A pot connected to A1, 0-1023 sets speed
 boolean pwmThrottle = false;        // Takes a standard servo signal on pin 2 (UNO)
-boolean spiThrottle = false;         // SPI mode, is an SPI slave, expects 1-255 for throttle position, with 0 being engine off
+boolean spiThrottle = false;        // SPI mode, is an SPI slave, expects 1-255 for throttle position, with 0 being engine off
 
 
 
@@ -39,7 +40,7 @@ volatile int16_t pulseWidth = 0;                // Current pulse width when in P
 void setup()
 {
   // SPI slave mode
-  pinMode(10, INPUT);  // CS Pin
+  pinMode(10, INPUT);  // Chip Select
   pinMode(12, OUTPUT); // MISO pin, this is for ATMEGA328/168
   SPCR |= _BV(SPE);// turn on SPI in slave mode
   SPCR |= _BV(SPIE); // turn on interrupts
@@ -204,7 +205,7 @@ void manageSpeed(){
 
     if(vol > curVolume) curVolume = vol;
     else {
-      curVolume -= (curVolume/10);  //7;
+      curVolume -= (curVolume/10);
       if(curVolume < VOL_MIN) curVolume = VOL_MIN;
     }
 
@@ -339,7 +340,7 @@ void getPulsewidth(){
   static unsigned long prevMicros = 0;
   static boolean lastState = LOW;
 
-  if(lastState == LOW && currentState == HIGH){ // Rising edge
+  if(lastState == LOW && currentState == HIGH){      // Rising edge
     prevMicros = currentMicros;
     lastState = currentState;
   }
